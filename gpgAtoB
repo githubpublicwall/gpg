@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# USAGE
+#      $ gpgAtoB senderEmail receiverEmail messageToEncrypt
+
+
+# Check number of input args
+if [ $# -ne 3 ]
+then
+	echo "ERROR gpgAtoB: Must be called with 3 input arguments."
+	echo "USAGE: $ gpgAtoB senderEmail receiverEmail messageToEncrypt"
+	echo
+fi
+
+
+gpg -e -a -u "$1" -r "$2" "$3"
