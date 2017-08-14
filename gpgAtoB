@@ -11,7 +11,7 @@ then
 	echo "ERROR gpgAtoB: Must be called with 3 input arguments."
 	echo "USAGE: $ gpgAtoB senderEmail receiverEmail messageToEncrypt"
 	echo ""
-	return
+	exit 1
 fi
 
 
