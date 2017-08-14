@@ -7,10 +7,10 @@
 # Check number of input args
 if [ $# -ne 3 ]
 then
-	echo
+	echo ""
 	echo "ERROR gpgAtoB: Must be called with 3 input arguments."
 	echo "USAGE: $ gpgAtoB senderEmail receiverEmail messageToEncrypt"
-	echo
+	echo ""
 	return
 fi
 
